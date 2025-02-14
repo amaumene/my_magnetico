@@ -18,4 +18,4 @@ WORKDIR /tmp
 
 COPY --from=builder /workspace/magnetico /usr/bin/
 
-ENTRYPOINT ["/usr/bin/magnetico", "$@", "--daemon" ]
+ENTRYPOINT ["/usr/bin/magnetico", "$@", "--daemon", "--web" ]
